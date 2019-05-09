@@ -1,4 +1,4 @@
-Core Scripts for Final Projects - Tr8 Plants using R-Programming
+Core Scripts for Final Project - Tr8 Plants using R-Programming
 
 
 In Shell, we will be using the following commands for the following purposes.
@@ -7,7 +7,7 @@ echo: Writes an argument to the standard output and displays the new text. This 
 
 sed: Replace and delete function. Can be used to change words, tabs, numbers, and any other type of data provided. Also useful for deleting duplicate occurances. Could also use the commands "grep" or "awk" for replacing and deleting needs.	
 
-Example for creating columns with the data types
+Example for creating columns with the data types:
 
 	 echo "1st_column%2nd_column%3rd_column..4th_column" > Tr8_Plants_Data.txt   ---   Displays the said columns  
 	 sed 's/%/\t/g' Tr8_Plants_Data.txt   ---   Separates the columns of data with tabs and keeps their descriptive name
@@ -20,7 +20,7 @@ gisd: Checks invasive species status for a set of species from GISD Database.
 
 key: Loads data from the RStudio profile, useful for graphing and plotting data. 
 
-Example for creating a plot graph with the provided data in RStudio
+Example for creating a plot graph with the provided data in RStudio:
 	
 	 library(Tr8Plants)
 	 library(Tr8Plants)
@@ -28,9 +28,9 @@ Example for creating a plot graph with the provided data in RStudio
 	 x <- map_fetch(taxonKey = key)
 	 plot(x, axes = TRUE, box = TRUE)
 
-RStudio Potential Functions and their Function:
+RStudio Potential Commands and their Function/Output:
 
-Tr8 Package: A tool for dowloading functional traits, data for plant species
+Tr8 Package: A tool for dowloading functional traits, data for plant species.
        
 	install.packages("TR8")   ---   How to install a package into RStudio
 	install_github("roponsci/TR8")  ---  Installs GitHub for pushing analysis
@@ -47,7 +47,7 @@ Tr8 Package: A tool for dowloading functional traits, data for plant species
 	env_data<-read_excel(path = tmp, sheet = "data.txt")
 	env_data<-env_data[,1:4]
 	
-These list of commands will give the following: Metadata, Veg data, and Env data
+These list of commands will give the following: Metadata, Veg data, and Env data.
 
 Metadata contains two columns, Col1 contains short codes used by the authors as surrogates of the full scientific names of species for the species which are stored in the Col2 column.
 
