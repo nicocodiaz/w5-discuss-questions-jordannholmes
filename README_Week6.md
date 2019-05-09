@@ -1,13 +1,14 @@
 Core Scripts for Final Projects - Tr8 Plants using R-Programming
 
 
-In Shell, we will be using the following commands for the following commands.
+In Shell, we will be using the following commands for the following purposes.
 
 echo: Writes an argument to the standard output and displays the new text. This will be useful when stringing data, especially when dealing with variables.
 
 sed: Replace and delete function. Can be used to change words, tabs, numbers, and any other type of data provided. Also useful for deleting duplicate occurances. Could also use the commands "grep" or "awk" for replacing and deleting needs.	
 
 Example for creating columns with the data types
+
 	 echo "1st_column%2nd_column%3rd_column..4th_column" > Tr8_Plants_Data.txt   ---   Displays the said columns  
 	 sed 's/%/\t/g' Tr8_Plants_Data.txt   ---   Separates the columns of data with tabs and keeps their descriptive name
 
@@ -33,7 +34,7 @@ Tr8 Package: A tool for dowloading functional traits, data for plant species
        
 	install.packages("TR8")   ---   How to install a package into RStudio
 	install_github("roponsci/TR8")  ---  Installs GitHub for pushing analysis
-        library("TR8")   --- Downloads the specific package required for analysis
+	library("TR8")   --- Downloads the specific package required for analysis
 	
 	url<-"http://datadryad.org/bitstream/handle/+10255/dryad.65646/MEE-13-11-651R2_data.xlsx?sequence=1"
 	tmp = tempfile(fileext = ".xlsx")
@@ -48,25 +49,26 @@ Tr8 Package: A tool for dowloading functional traits, data for plant species
 	
 These list of commands will give the following: Metadata, Veg data, and Env data
 
-Metadata contains two columns, Col1 contains short codes used by the authors as surrogates of the full scientific names of species for the species which are stored in the Col2 column
+Metadata contains two columns, Col1 contains short codes used by the authors as surrogates of the full scientific names of species for the species which are stored in the Col2 column.
 
-Veg data contains a sites ∗ species table of biomass values
+Veg data contains a site's species table of biomass values.
 
-Env data contains the experimental variables
+Env data contains a list of experimental variables.
 
 	species_names<-final_dataframe$acceptedname
 	my_traits<-c("h_max","le_area","leaf_mass","li_form_B","strategy")
 	retrieved_traits<-tr8(species_list = species_names,download_list = my_traits)
 
-Maximum height is available in Ecoflora and its short code is h_max
+Maximum height is available in Ecoflora and its short code is h_max.
 
-Leaf area is available in Ecoflora and its short code is le_area
+Leaf area is available in Ecoflora and its short code is le_area.
 
-Leaf mass is available in LEDA and its short code is leaf_mass
+Leaf mass is available in LEDA and its short code is leaf_mass.
 
-Life form is available in BiolFlor3 and its short code is li_form_B
+Life form is available in BiolFlor3 and its short code is li_form_B.
 
 Originr Package: Used for invasive species: If we want to explore if the species listed in the data COULD be considered invasive.
+
 	install.packages("originr")   ---   How to install a package into RStudio
 	install_github("roponsci/originr")  ---  Installs GitHub for pushing analysis
 	library("originr")   --- Downloads the specific package required for analysis
