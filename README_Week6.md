@@ -14,11 +14,11 @@ Example for creating columns with the data types
 
 RStudio: Create formatting for the organized data. This could includes changes in font, font size, or color of text. This will also be useful when plotting the data on a graph.
 
-sp: Character, identifies a single species name in a specified form
+sp: Character, identifies a single species name in a specified form.
 
 gisd: Checks invasive species status for a set of species from GISD Database.
 
-key: Loads data from the RStudio profile, useful for graphing and plotting data 
+key: Loads data from the RStudio profile, useful for graphing and plotting data. 
 
 Example for creating a plot graph with the provided data in RStudio
 	
@@ -38,7 +38,7 @@ Tr8 Package: A tool for dowloading functional traits, data for plant species
 	
 	url<-"http://datadryad.org/bitstream/handle/+10255/dryad.65646/MEE-13-11-651R2_data.xlsx?sequence=1"
 	tmp = tempfile(fileext = ".xlsx")
-        download.file(url = url, destfile = tmp)
+	download.file(url = url, destfile = tmp)
 	metadata<-read_excel(path=tmp,sheet="metadata",skip=12,col_names=F)
 	names(metadata)<-c("Col1","Col2")
 	veg_data <-readWorksheetFromFile(file = tmp, sheet = "data.txt")
