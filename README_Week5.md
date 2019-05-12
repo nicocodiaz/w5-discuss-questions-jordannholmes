@@ -13,3 +13,12 @@ Question 4: The output will be an organized view of the data provided, both eDNA
 Question 5: We will be using the sed function to process and clean up the data files to only contain the data we need to analyze after we choose the variable. The grep function may also be utilized.
 
 Question 6: Our biggest concerns all relate to our lack of experience. We fear we will not be able to come up with the appropriate commands to code for what we want to manipulate or fix in the provided data. We are also afraid that we are not fully aware of the complexities of this project yet and will have a difficult time starting.
+
+## Grade Discussion 5 (week5): 20/20 Nice work!!! :thumbsup:
+
+| **Rubric** | **5pt** | **4pt** | **3pt** | **2pt** | **1pt** |
+| --- | ---| --- | --- | --- | --- |
+| In-Lab work | **X** | | | |
+| Questions | **X** | | | |
+| Project README.md | **X** | | | |
+| Challenges - Timely Submission | **X** | | | |
